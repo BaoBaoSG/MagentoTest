@@ -13,7 +13,7 @@ Dự án này được thiết kế để tự động hóa các bài kiểm th�
 ### Các Bước Cài Đặt
 1. Clone repo này về máy của bạn sử dụng lệnh:
    ```bash
-   git clone <đường dẫn đến repo>
+   git clone https://github.com/BaoBaoSG/MagentoTest
 
 - Chạy lệnh sau trong thư mục gốc của dự án để cài đặt các phụ thuộc:
 npm install
@@ -23,11 +23,11 @@ npm test
 
 Kết quả của các bài kiểm thử sẽ được hiển thị trên console và báo cáo chi tiết sẽ được tạo trong thư mục reports.
 
-- Công Nghệ Được Sử Dụng
-Playwright: Được sử dụng để tự động hóa trình duyệt và thực hiện các bài kiểm thử.
-Mocha: Khung kiểm thử JavaScript cho các bài kiểm thử đơn vị và tích hợp.
-Chai: Thư viện assertion để sử dụng với Mocha để kiểm tra các kết quả kiểm thử.
-Mochawesome: Bộ tạo báo cáo kiểm thử để xuất ra báo cáo HTML chi tiết.
+# Công Nghệ Được Sử Dụng
+- Playwright: Được sử dụng để tự động hóa trình duyệt và thực hiện các bài kiểm thử.
+- Mocha: Khung kiểm thử JavaScript cho các bài kiểm thử đơn vị và tích hợp.
+- Chai: Thư viện assertion để sử dụng với Mocha để kiểm tra các kết quả kiểm thử.
+- Mochawesome: Bộ tạo báo cáo kiểm thử để xuất ra báo cáo HTML chi tiết.
 
-- Bảo Trì
+# Bảo Trì
 Thông tin về việc bảo trì dự án và cập nhật các bài kiểm thử sẽ được cập nhật trong phần này theo thời gian thực.
