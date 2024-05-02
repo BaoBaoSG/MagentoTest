@@ -6,8 +6,10 @@
   "type": "module",
   "scripts": {
     "test": "mocha './tests/*.js' --reporter mochawesome --reporter-options reportDir=reports,reportFilename=index"
-  }  
-  ,
+  },
+  "files.exclude": {
+    "**/*.java": false
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",

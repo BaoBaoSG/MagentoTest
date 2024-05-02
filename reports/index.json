@@ -5,9 +5,9 @@
     "passes": 3,
     "pending": 0,
     "failures": 0,
-    "start": "2024-05-02T08:11:43.570Z",
-    "end": "2024-05-02T08:12:22.977Z",
-    "duration": 39407,
+    "start": "2024-05-02T15:43:05.979Z",
+    "end": "2024-05-02T15:43:29.351Z",
+    "duration": 23372,
     "testsRegistered": 3,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "223176bb-4dc8-4559-b390-a31497d12fca",
+      "uuid": "5b3aa570-7e0f-4195-9832-47769a0aa8ad",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -27,9 +27,9 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "44e60834-fa91-493c-a1a1-9ae5ce4abb3a",
+          "uuid": "294de522-603c-4f5a-875e-1017a3f9e156",
           "title": "Home Page Test",
-          "fullFile": "C:\\Users\\Admin\\Desktop\\MagentoTest\\tests\\homePageTest.js",
+          "fullFile": "C:\\Users\\Admin\\MagentoTest\\tests\\homePageTest.js",
           "file": "\\tests\\homePageTest.js",
           "beforeHooks": [],
           "afterHooks": [],
@@ -38,7 +38,7 @@
               "title": "should open the homepage and take a screenshot",
               "fullTitle": "Home Page Test should open the homepage and take a screenshot",
               "timedOut": false,
-              "duration": 12196,
+              "duration": 6033,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,28 +47,28 @@
               "context": null,
               "code": "const browser = await chromium.launch({ headless: false });\nconst page = await browser.newPage();\nawait page.goto('https://magento.softwaretestingboard.com/');\nconst title = await page.title();\nawait page.screenshot({ path: 'C:\\\\Users\\\\Admin\\\\Desktop\\\\MagentoTest\\\\reports\\\\screenshots\\\\homePageTest.png' });\nawait browser.close();",
               "err": {},
-              "uuid": "0b58a3d0-3bf2-492b-b087-bc0e20b16669",
-              "parentUUID": "44e60834-fa91-493c-a1a1-9ae5ce4abb3a",
+              "uuid": "3b9dab74-2dd9-4497-8a31-bd3c60a4c15b",
+              "parentUUID": "294de522-603c-4f5a-875e-1017a3f9e156",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "0b58a3d0-3bf2-492b-b087-bc0e20b16669"
+            "3b9dab74-2dd9-4497-8a31-bd3c60a4c15b"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 12196,
+          "duration": 6033,
           "root": false,
           "rootEmpty": false,
           "_timeout": 100000
         },
         {
-          "uuid": "7986cfa8-a27e-4d3f-bac3-821b9befde39",
+          "uuid": "21c4a16f-80bd-4c2e-9461-7cc403550017",
           "title": "Sign In Test",
-          "fullFile": "C:\\Users\\Admin\\Desktop\\MagentoTest\\tests\\signInTest.js",
+          "fullFile": "C:\\Users\\Admin\\MagentoTest\\tests\\signInTest.js",
           "file": "\\tests\\signInTest.js",
           "beforeHooks": [],
           "afterHooks": [],
@@ -77,7 +77,7 @@
               "title": "should sign in successfully and take a screenshot",
               "fullTitle": "Sign In Test should sign in successfully and take a screenshot",
               "timedOut": false,
-              "duration": 13941,
+              "duration": 7955,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -86,28 +86,28 @@
               "context": null,
               "code": "const browser = await chromium.launch({ headless: false });\nconst page = await browser.newPage();\nawait page.goto('https://magento.softwaretestingboard.com/');\nawait page.click('text=\"Sign In\"');\nawait page.fill('input[name=\"login[username]\"]', 'baotestexample@gmail.com');\nawait page.fill('input[name=\"login[password]\"]', 'Bao123456aA@');\nawait Promise.all([\n    page.waitForNavigation(),\n    page.click('button[type=\"submit\"].action.login.primary')\n]);\nconst url = await page.url();\nawait page.screenshot({ path: 'C:\\\\Users\\\\Admin\\\\Desktop\\\\MagentoTest\\\\reports\\\\screenshots\\\\signInTest.png' });\nawait browser.close();",
               "err": {},
-              "uuid": "2a90d76b-3744-4b49-ab60-65b95025581f",
-              "parentUUID": "7986cfa8-a27e-4d3f-bac3-821b9befde39",
+              "uuid": "5f1cfdfa-bb73-4100-8adc-9101a31c5ed5",
+              "parentUUID": "21c4a16f-80bd-4c2e-9461-7cc403550017",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "2a90d76b-3744-4b49-ab60-65b95025581f"
+            "5f1cfdfa-bb73-4100-8adc-9101a31c5ed5"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 13941,
+          "duration": 7955,
           "root": false,
           "rootEmpty": false,
           "_timeout": 100000
         },
         {
-          "uuid": "58e8e1dc-01c7-4fbc-950d-57f67c79c9a9",
+          "uuid": "bda9c21c-fc2a-4a17-9b8a-1de114fe9118",
           "title": "Sign Up Test",
-          "fullFile": "C:\\Users\\Admin\\Desktop\\MagentoTest\\tests\\signUpTest.js",
+          "fullFile": "C:\\Users\\Admin\\MagentoTest\\tests\\signUpTest.js",
           "file": "\\tests\\signUpTest.js",
           "beforeHooks": [],
           "afterHooks": [],
@@ -116,7 +116,7 @@
               "title": "should sign up successfully and take a screenshot",
               "fullTitle": "Sign Up Test should sign up successfully and take a screenshot",
               "timedOut": false,
-              "duration": 13158,
+              "duration": 9379,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -125,20 +125,20 @@
               "context": null,
               "code": "const browser = await chromium.launch({ headless: false });\nconst page = await browser.newPage();\nawait page.goto('https://magento.softwaretestingboard.com/');\nawait page.click('text=\"Create an Account\"');\nconst username = getRandomString('user');\nconst password = generateStrongPassword();\nawait page.fill('input[name=\"firstname\"]', 'Tran');\nawait page.fill('input[name=\"lastname\"]', 'Bao');\nawait page.fill('input[name=\"email\"]', `${username}@example.com`);\nawait page.fill('input[name=\"password\"]', password);\nawait page.fill('input[name=\"password_confirmation\"]', password);\nawait page.click('button.submit.primary[type=\"submit\"]:has-text(\"Create an Account\")');\nconst element = await page.waitForSelector('text=\"Thank you for registering with Main Website Store.\"');\nexpect(await element.isVisible()).to.be.true;\nawait page.screenshot({ path: 'C:\\\\Users\\\\Admin\\\\Desktop\\\\MagentoTest\\\\reports\\\\screenshots\\\\signUpTest.png' });\nawait browser.close();",
               "err": {},
-              "uuid": "a3b0ce05-b7c7-40c4-9e18-26355f2e5fbc",
-              "parentUUID": "58e8e1dc-01c7-4fbc-950d-57f67c79c9a9",
+              "uuid": "5c8cca9f-1b2e-4478-b213-2691a15e3aa1",
+              "parentUUID": "bda9c21c-fc2a-4a17-9b8a-1de114fe9118",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "a3b0ce05-b7c7-40c4-9e18-26355f2e5fbc"
+            "5c8cca9f-1b2e-4478-b213-2691a15e3aa1"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 13158,
+          "duration": 9379,
           "root": false,
           "rootEmpty": false,
           "_timeout": 100000
